@@ -16,6 +16,7 @@
 		C3DE4C171DC042E5004FE136 /* SoundfuryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DE4C161DC042E5004FE136 /* SoundfuryTests.swift */; };
 		C3DE4C221DC042E5004FE136 /* SoundfuryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DE4C211DC042E5004FE136 /* SoundfuryUITests.swift */; };
 		C3FCB7051DC049D7004AE303 /* NewRecordingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FCB7041DC049D7004AE303 /* NewRecordingVC.swift */; };
+		C3FCB7071DC06732004AE303 /* SoundCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FCB7061DC06732004AE303 /* SoundCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		C3DE4C211DC042E5004FE136 /* SoundfuryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundfuryUITests.swift; sourceTree = "<group>"; };
 		C3DE4C231DC042E5004FE136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3FCB7041DC049D7004AE303 /* NewRecordingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewRecordingVC.swift; sourceTree = "<group>"; };
+		C3FCB7061DC06732004AE303 /* SoundCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				C3DE4C0D1DC042E4004FE136 /* Info.plist */,
 				C3DE4C051DC042E4004FE136 /* Soundfury.xcdatamodeld */,
 				C3FCB7041DC049D7004AE303 /* NewRecordingVC.swift */,
+				C3FCB7061DC06732004AE303 /* SoundCell.swift */,
 			);
 			path = Soundfury;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 				C3DE4C011DC042E4004FE136 /* ViewController.swift in Sources */,
 				C3DE4C071DC042E4004FE136 /* Soundfury.xcdatamodeld in Sources */,
 				C3DE4BFF1DC042E4004FE136 /* AppDelegate.swift in Sources */,
+				C3FCB7071DC06732004AE303 /* SoundCell.swift in Sources */,
 				C3FCB7051DC049D7004AE303 /* NewRecordingVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

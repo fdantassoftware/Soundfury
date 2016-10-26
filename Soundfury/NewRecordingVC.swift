@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class NewRecordingVC: UIViewController {
+class NewRecordingVC: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var savePressed: UIButton!
     var audioRecorder: AVAudioRecorder?
     var audioPlayer: AVAudioPlayer?
@@ -27,6 +27,7 @@ class NewRecordingVC: UIViewController {
         savePressed.clipsToBounds = true
         setupRecorder()
         playBT.isEnabled = false
+        savePressed.isEnabled = false
         
 
         
@@ -66,6 +67,7 @@ class NewRecordingVC: UIViewController {
             audioRecorder!.stop()
             recordBT.setImage(btImage, for: .normal)
             playBT.isEnabled = true
+            savePressed.isEnabled = true
             
             
             
@@ -89,9 +91,31 @@ class NewRecordingVC: UIViewController {
     }
   
     @IBAction func savePressed(_ sender: AnyObject) {
-        
-        
-        
-        
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        let sound = Sound(context: context)
+        if let name = nameLabel.text {
+            sound.name = name
+            sound.audio = NSData(contentsOf: audioURL!)
+            let ad = UIApplication.shared.delegate as! AppDelegate
+            ad.saveContext()
+            dismiss(animated: true, completion: nil)
+        }
+
     }
+    
+    @IBAction func backPressed(_ sender: AnyObject) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        nameLabel.resignFirstResponder()
+        return true
+    }
+    
+    
 }
