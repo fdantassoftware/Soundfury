@@ -119,7 +119,10 @@
                                     <constraint firstAttribute="width" constant="70" id="qen-Cu-HbN"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="tpI-eN-Zdd"/>
                                 </constraints>
-                                <state key="normal" image="noun_582717"/>
+                                <state key="normal" image="startrecording"/>
+                                <connections>
+                                    <action selector="recordpressed:" destination="lN2-cY-ijS" eventType="touchUpInside" id="iYs-oj-Hhe"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43F-Af-Piv">
                                 <constraints>
@@ -129,6 +132,9 @@
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="eBR-cJ-8W0"/>
                                 </constraints>
                                 <state key="normal" image="playbt-1"/>
+                                <connections>
+                                    <action selector="playPressed:" destination="lN2-cY-ijS" eventType="touchUpInside" id="kzS-yI-dmM"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="weT-6o-C7s">
                                 <constraints>
@@ -147,6 +153,9 @@
                                 <state key="normal" title="Save">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="savePressed:" destination="lN2-cY-ijS" eventType="touchUpInside" id="lpj-eQ-tMr"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -168,6 +177,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="nameLabel" destination="weT-6o-C7s" id="qjj-b0-f73"/>
+                        <outlet property="playBT" destination="43F-Af-Piv" id="oUa-Tv-afh"/>
+                        <outlet property="recordBT" destination="CUT-s2-xb8" id="G2b-Qj-c9C"/>
                         <outlet property="savePressed" destination="yZb-LK-ga0" id="XKs-Pm-mmP"/>
                     </connections>
                 </viewController>
@@ -178,7 +190,7 @@
     </scenes>
     <resources>
         <image name="back" width="100" height="67"/>
-        <image name="noun_582717" width="1200" height="1200"/>
         <image name="playbt-1" width="210" height="210"/>
+        <image name="startrecording" width="1200" height="1200"/>
     </resources>
 </document>
