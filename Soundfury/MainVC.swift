@@ -11,7 +11,7 @@ import CoreData
 import Foundation
 import AVFoundation
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFetchedResultsControllerDelegate {
+class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFetchedResultsControllerDelegate {
     @IBOutlet weak var tableView: UITableView!
     var controller: NSFetchedResultsController<Sound>!
     var audioPlayer: AVAudioPlayer?

@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C3DE4BFF1DC042E4004FE136 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DE4BFE1DC042E4004FE136 /* AppDelegate.swift */; };
-		C3DE4C011DC042E4004FE136 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DE4C001DC042E4004FE136 /* ViewController.swift */; };
+		C3DE4C011DC042E4004FE136 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DE4C001DC042E4004FE136 /* MainVC.swift */; };
 		C3DE4C041DC042E4004FE136 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3DE4C021DC042E4004FE136 /* Main.storyboard */; };
 		C3DE4C071DC042E4004FE136 /* Soundfury.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3DE4C051DC042E4004FE136 /* Soundfury.xcdatamodeld */; };
 		C3DE4C091DC042E4004FE136 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3DE4C081DC042E4004FE136 /* Assets.xcassets */; };
@@ -17,6 +17,8 @@
 		C3DE4C221DC042E5004FE136 /* SoundfuryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DE4C211DC042E5004FE136 /* SoundfuryUITests.swift */; };
 		C3FCB7051DC049D7004AE303 /* NewRecordingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FCB7041DC049D7004AE303 /* NewRecordingVC.swift */; };
 		C3FCB7071DC06732004AE303 /* SoundCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FCB7061DC06732004AE303 /* SoundCell.swift */; };
+		C3FCB7101DC136CC004AE303 /* Sound+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FCB70E1DC136CC004AE303 /* Sound+CoreDataClass.swift */; };
+		C3FCB7111DC136CC004AE303 /* Sound+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FCB70F1DC136CC004AE303 /* Sound+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +41,7 @@
 /* Begin PBXFileReference section */
 		C3DE4BFB1DC042E4004FE136 /* Soundfury.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Soundfury.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3DE4BFE1DC042E4004FE136 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C3DE4C001DC042E4004FE136 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C3DE4C001DC042E4004FE136 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		C3DE4C031DC042E4004FE136 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C3DE4C061DC042E4004FE136 /* Soundfury.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Soundfury.xcdatamodel; sourceTree = "<group>"; };
 		C3DE4C081DC042E4004FE136 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +55,8 @@
 		C3DE4C231DC042E5004FE136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3FCB7041DC049D7004AE303 /* NewRecordingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewRecordingVC.swift; sourceTree = "<group>"; };
 		C3FCB7061DC06732004AE303 /* SoundCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundCell.swift; sourceTree = "<group>"; };
+		C3FCB70E1DC136CC004AE303 /* Sound+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Sound+CoreDataClass.swift"; path = "../Sound+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C3FCB70F1DC136CC004AE303 /* Sound+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Sound+CoreDataProperties.swift"; path = "../Sound+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,15 +107,13 @@
 		C3DE4BFD1DC042E4004FE136 /* Soundfury */ = {
 			isa = PBXGroup;
 			children = (
-				C3DE4BFE1DC042E4004FE136 /* AppDelegate.swift */,
-				C3DE4C001DC042E4004FE136 /* ViewController.swift */,
-				C3DE4C021DC042E4004FE136 /* Main.storyboard */,
-				C3DE4C081DC042E4004FE136 /* Assets.xcassets */,
-				C3DE4C0A1DC042E4004FE136 /* LaunchScreen.storyboard */,
 				C3DE4C0D1DC042E4004FE136 /* Info.plist */,
-				C3DE4C051DC042E4004FE136 /* Soundfury.xcdatamodeld */,
-				C3FCB7041DC049D7004AE303 /* NewRecordingVC.swift */,
-				C3FCB7061DC06732004AE303 /* SoundCell.swift */,
+				C3DE4BFE1DC042E4004FE136 /* AppDelegate.swift */,
+				C3FCB7161DC13823004AE303 /* Assets */,
+				C3FCB7151DC13812004AE303 /* StoryBoards */,
+				C3FCB7141DC137FE004AE303 /* Model */,
+				C3FCB7131DC137E1004AE303 /* Views */,
+				C3FCB7121DC137AF004AE303 /* Controllers */,
 			);
 			path = Soundfury;
 			sourceTree = "<group>";
@@ -132,6 +134,50 @@
 				C3DE4C231DC042E5004FE136 /* Info.plist */,
 			);
 			path = SoundfuryUITests;
+			sourceTree = "<group>";
+		};
+		C3FCB7121DC137AF004AE303 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C3DE4C001DC042E4004FE136 /* MainVC.swift */,
+				C3FCB7041DC049D7004AE303 /* NewRecordingVC.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		C3FCB7131DC137E1004AE303 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C3FCB7061DC06732004AE303 /* SoundCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		C3FCB7141DC137FE004AE303 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C3FCB70E1DC136CC004AE303 /* Sound+CoreDataClass.swift */,
+				C3FCB70F1DC136CC004AE303 /* Sound+CoreDataProperties.swift */,
+				C3DE4C051DC042E4004FE136 /* Soundfury.xcdatamodeld */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C3FCB7151DC13812004AE303 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				C3DE4C021DC042E4004FE136 /* Main.storyboard */,
+				C3DE4C0A1DC042E4004FE136 /* LaunchScreen.storyboard */,
+			);
+			name = StoryBoards;
+			sourceTree = "<group>";
+		};
+		C3FCB7161DC13823004AE303 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				C3DE4C081DC042E4004FE136 /* Assets.xcassets */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,11 +317,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3DE4C011DC042E4004FE136 /* ViewController.swift in Sources */,
+				C3DE4C011DC042E4004FE136 /* MainVC.swift in Sources */,
 				C3DE4C071DC042E4004FE136 /* Soundfury.xcdatamodeld in Sources */,
 				C3DE4BFF1DC042E4004FE136 /* AppDelegate.swift in Sources */,
 				C3FCB7071DC06732004AE303 /* SoundCell.swift in Sources */,
 				C3FCB7051DC049D7004AE303 /* NewRecordingVC.swift in Sources */,
+				C3FCB7111DC136CC004AE303 /* Sound+CoreDataProperties.swift in Sources */,
+				C3FCB7101DC136CC004AE303 /* Sound+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
