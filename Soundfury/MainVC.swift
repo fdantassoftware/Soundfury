@@ -98,5 +98,45 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         }
     }
 
+    func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
+        
+        tableView.beginUpdates()
+    }
+    
+    
+    func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
+        
+        tableView.endUpdates()
+        
+    }
+
+
+    func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange anObject: Any, at indexPath: IndexPath?, for type: NSFetchedResultsChangeType, newIndexPath: IndexPath?) {
+        switch (type) {
+        case .delete:
+            
+            tableView.deleteRows(at: [indexPath!], with: .fade)
+        case .insert:
+            if let indexPath = newIndexPath {
+                
+                tableView.insertRows(at: [indexPath], with: .fade)
+            }
+        default:
+            break
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        
+        if editingStyle == .delete {
+            
+            let sound = controller.object(at: indexPath)
+            let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+            let ad = UIApplication.shared.delegate as! AppDelegate
+            context.delete(sound)
+            ad.saveContext()
+        }
+    }
+
 }
 
