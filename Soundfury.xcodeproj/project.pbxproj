@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C3DE4BFF1DC042E4004FE136 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DE4BFE1DC042E4004FE136 /* AppDelegate.swift */; };
+		C3DE4C011DC042E4004FE136 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DE4C001DC042E4004FE136 /* ViewController.swift */; };
+		C3DE4C041DC042E4004FE136 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3DE4C021DC042E4004FE136 /* Main.storyboard */; };
+		C3DE4C071DC042E4004FE136 /* Soundfury.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3DE4C051DC042E4004FE136 /* Soundfury.xcdatamodeld */; };
+		C3DE4C091DC042E4004FE136 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3DE4C081DC042E4004FE136 /* Assets.xcassets */; };
+		C3DE4C0C1DC042E4004FE136 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3DE4C0A1DC042E4004FE136 /* LaunchScreen.storyboard */; };
+		C3DE4C171DC042E5004FE136 /* SoundfuryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DE4C161DC042E5004FE136 /* SoundfuryTests.swift */; };
+		C3DE4C221DC042E5004FE136 /* SoundfuryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DE4C211DC042E5004FE136 /* SoundfuryUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C3DE4C131DC042E4004FE136 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3DE4BF31DC042E4004FE136 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3DE4BFA1DC042E4004FE136;
+			remoteInfo = Soundfury;
+		};
+		C3DE4C1E1DC042E5004FE136 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3DE4BF31DC042E4004FE136 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3DE4BFA1DC042E4004FE136;
+			remoteInfo = Soundfury;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C3DE4BFB1DC042E4004FE136 /* Soundfury.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Soundfury.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3DE4BFE1DC042E4004FE136 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C3DE4C001DC042E4004FE136 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C3DE4C031DC042E4004FE136 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C3DE4C061DC042E4004FE136 /* Soundfury.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Soundfury.xcdatamodel; sourceTree = "<group>"; };
+		C3DE4C081DC042E4004FE136 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C3DE4C0B1DC042E4004FE136 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C3DE4C0D1DC042E4004FE136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3DE4C121DC042E4004FE136 /* SoundfuryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoundfuryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3DE4C161DC042E5004FE136 /* SoundfuryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundfuryTests.swift; sourceTree = "<group>"; };
+		C3DE4C181DC042E5004FE136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3DE4C1D1DC042E5004FE136 /* SoundfuryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoundfuryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3DE4C211DC042E5004FE136 /* SoundfuryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundfuryUITests.swift; sourceTree = "<group>"; };
+		C3DE4C231DC042E5004FE136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C3DE4BF81DC042E4004FE136 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3DE4C0F1DC042E4004FE136 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3DE4C1A1DC042E5004FE136 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C3DE4BF21DC042E4004FE136 = {
+			isa = PBXGroup;
+			children = (
+				C3DE4BFD1DC042E4004FE136 /* Soundfury */,
+				C3DE4C151DC042E4004FE136 /* SoundfuryTests */,
+				C3DE4C201DC042E5004FE136 /* SoundfuryUITests */,
+				C3DE4BFC1DC042E4004FE136 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C3DE4BFC1DC042E4004FE136 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3DE4BFB1DC042E4004FE136 /* Soundfury.app */,
+				C3DE4C121DC042E4004FE136 /* SoundfuryTests.xctest */,
+				C3DE4C1D1DC042E5004FE136 /* SoundfuryUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3DE4BFD1DC042E4004FE136 /* Soundfury */ = {
+			isa = PBXGroup;
+			children = (
+				C3DE4BFE1DC042E4004FE136 /* AppDelegate.swift */,
+				C3DE4C001DC042E4004FE136 /* ViewController.swift */,
+				C3DE4C021DC042E4004FE136 /* Main.storyboard */,
+				C3DE4C081DC042E4004FE136 /* Assets.xcassets */,
+				C3DE4C0A1DC042E4004FE136 /* LaunchScreen.storyboard */,
+				C3DE4C0D1DC042E4004FE136 /* Info.plist */,
+				C3DE4C051DC042E4004FE136 /* Soundfury.xcdatamodeld */,
+			);
+			path = Soundfury;
+			sourceTree = "<group>";
+		};
+		C3DE4C151DC042E4004FE136 /* SoundfuryTests */ = {
+			isa = PBXGroup;
+			children = (
+				C3DE4C161DC042E5004FE136 /* SoundfuryTests.swift */,
+				C3DE4C181DC042E5004FE136 /* Info.plist */,
+			);
+			path = SoundfuryTests;
+			sourceTree = "<group>";
+		};
+		C3DE4C201DC042E5004FE136 /* SoundfuryUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C3DE4C211DC042E5004FE136 /* SoundfuryUITests.swift */,
+				C3DE4C231DC042E5004FE136 /* Info.plist */,
+			);
+			path = SoundfuryUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C3DE4BFA1DC042E4004FE136 /* Soundfury */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3DE4C261DC042E5004FE136 /* Build configuration list for PBXNativeTarget "Soundfury" */;
+			buildPhases = (
+				C3DE4BF71DC042E4004FE136 /* Sources */,
+				C3DE4BF81DC042E4004FE136 /* Frameworks */,
+				C3DE4BF91DC042E4004FE136 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Soundfury;
+			productName = Soundfury;
+			productReference = C3DE4BFB1DC042E4004FE136 /* Soundfury.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C3DE4C111DC042E4004FE136 /* SoundfuryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3DE4C291DC042E5004FE136 /* Build configuration list for PBXNativeTarget "SoundfuryTests" */;
+			buildPhases = (
+				C3DE4C0E1DC042E4004FE136 /* Sources */,
+				C3DE4C0F1DC042E4004FE136 /* Frameworks */,
+				C3DE4C101DC042E4004FE136 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3DE4C141DC042E4004FE136 /* PBXTargetDependency */,
+			);
+			name = SoundfuryTests;
+			productName = SoundfuryTests;
+			productReference = C3DE4C121DC042E4004FE136 /* SoundfuryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C3DE4C1C1DC042E5004FE136 /* SoundfuryUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3DE4C2C1DC042E5004FE136 /* Build configuration list for PBXNativeTarget "SoundfuryUITests" */;
+			buildPhases = (
+				C3DE4C191DC042E5004FE136 /* Sources */,
+				C3DE4C1A1DC042E5004FE136 /* Frameworks */,
+				C3DE4C1B1DC042E5004FE136 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3DE4C1F1DC042E5004FE136 /* PBXTargetDependency */,
+			);
+			name = SoundfuryUITests;
+			productName = SoundfuryUITests;
+			productReference = C3DE4C1D1DC042E5004FE136 /* SoundfuryUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C3DE4BF31DC042E4004FE136 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = DantasSoftware;
+				TargetAttributes = {
+					C3DE4BFA1DC042E4004FE136 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 2K6N9E42FC;
+						ProvisioningStyle = Automatic;
+					};
+					C3DE4C111DC042E4004FE136 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 2K6N9E42FC;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C3DE4BFA1DC042E4004FE136;
+					};
+					C3DE4C1C1DC042E5004FE136 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 2K6N9E42FC;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C3DE4BFA1DC042E4004FE136;
+					};
+				};
+			};
+			buildConfigurationList = C3DE4BF61DC042E4004FE136 /* Build configuration list for PBXProject "Soundfury" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C3DE4BF21DC042E4004FE136;
+			productRefGroup = C3DE4BFC1DC042E4004FE136 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C3DE4BFA1DC042E4004FE136 /* Soundfury */,
+				C3DE4C111DC042E4004FE136 /* SoundfuryTests */,
+				C3DE4C1C1DC042E5004FE136 /* SoundfuryUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C3DE4BF91DC042E4004FE136 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3DE4C0C1DC042E4004FE136 /* LaunchScreen.storyboard in Resources */,
+				C3DE4C091DC042E4004FE136 /* Assets.xcassets in Resources */,
+				C3DE4C041DC042E4004FE136 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3DE4C101DC042E4004FE136 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3DE4C1B1DC042E5004FE136 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C3DE4BF71DC042E4004FE136 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3DE4C011DC042E4004FE136 /* ViewController.swift in Sources */,
+				C3DE4C071DC042E4004FE136 /* Soundfury.xcdatamodeld in Sources */,
+				C3DE4BFF1DC042E4004FE136 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3DE4C0E1DC042E4004FE136 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3DE4C171DC042E5004FE136 /* SoundfuryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3DE4C191DC042E5004FE136 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3DE4C221DC042E5004FE136 /* SoundfuryUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C3DE4C141DC042E4004FE136 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3DE4BFA1DC042E4004FE136 /* Soundfury */;
+			targetProxy = C3DE4C131DC042E4004FE136 /* PBXContainerItemProxy */;
+		};
+		C3DE4C1F1DC042E5004FE136 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3DE4BFA1DC042E4004FE136 /* Soundfury */;
+			targetProxy = C3DE4C1E1DC042E5004FE136 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C3DE4C021DC042E4004FE136 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3DE4C031DC042E4004FE136 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C3DE4C0A1DC042E4004FE136 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3DE4C0B1DC042E4004FE136 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C3DE4C241DC042E5004FE136 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C3DE4C251DC042E5004FE136 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C3DE4C271DC042E5004FE136 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2K6N9E42FC;
+				INFOPLIST_FILE = Soundfury/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DantasSoftware.Timer.Soundfury;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C3DE4C281DC042E5004FE136 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2K6N9E42FC;
+				INFOPLIST_FILE = Soundfury/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DantasSoftware.Timer.Soundfury;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		C3DE4C2A1DC042E5004FE136 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 2K6N9E42FC;
+				INFOPLIST_FILE = SoundfuryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DantasSoftware.Timer.SoundfuryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Soundfury.app/Soundfury";
+			};
+			name = Debug;
+		};
+		C3DE4C2B1DC042E5004FE136 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 2K6N9E42FC;
+				INFOPLIST_FILE = SoundfuryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DantasSoftware.Timer.SoundfuryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Soundfury.app/Soundfury";
+			};
+			name = Release;
+		};
+		C3DE4C2D1DC042E5004FE136 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 2K6N9E42FC;
+				INFOPLIST_FILE = SoundfuryUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DantasSoftware.Timer.SoundfuryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Soundfury;
+			};
+			name = Debug;
+		};
+		C3DE4C2E1DC042E5004FE136 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 2K6N9E42FC;
+				INFOPLIST_FILE = SoundfuryUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DantasSoftware.Timer.SoundfuryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Soundfury;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C3DE4BF61DC042E4004FE136 /* Build configuration list for PBXProject "Soundfury" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3DE4C241DC042E5004FE136 /* Debug */,
+				C3DE4C251DC042E5004FE136 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3DE4C261DC042E5004FE136 /* Build configuration list for PBXNativeTarget "Soundfury" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3DE4C271DC042E5004FE136 /* Debug */,
+				C3DE4C281DC042E5004FE136 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C3DE4C291DC042E5004FE136 /* Build configuration list for PBXNativeTarget "SoundfuryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3DE4C2A1DC042E5004FE136 /* Debug */,
+				C3DE4C2B1DC042E5004FE136 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C3DE4C2C1DC042E5004FE136 /* Build configuration list for PBXNativeTarget "SoundfuryUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3DE4C2D1DC042E5004FE136 /* Debug */,
+				C3DE4C2E1DC042E5004FE136 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C3DE4C051DC042E4004FE136 /* Soundfury.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C3DE4C061DC042E4004FE136 /* Soundfury.xcdatamodel */,
+			);
+			currentVersion = C3DE4C061DC042E4004FE136 /* Soundfury.xcdatamodel */;
+			path = Soundfury.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C3DE4BF31DC042E4004FE136 /* Project object */;
+}
