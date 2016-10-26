@@ -11,16 +11,13 @@ import AVFoundation
 
 class NewRecordingVC: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var savePressed: UIButton!
+    @IBOutlet weak var waveIMG: UIImageView!
+    @IBOutlet weak var nameLabel: UITextField!
+    @IBOutlet weak var playBT: UIButton!
+    @IBOutlet weak var recordBT: UIButton!
     var audioRecorder: AVAudioRecorder?
     var audioPlayer: AVAudioPlayer?
     var audioURL: URL?
-
-    @IBOutlet weak var waveIMG: UIImageView!
-    @IBOutlet weak var nameLabel: UITextField!
- 
-    @IBOutlet weak var playBT: UIButton!
-    
-    @IBOutlet weak var recordBT: UIButton!
    
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,9 +26,7 @@ class NewRecordingVC: UIViewController, UITextFieldDelegate {
         setupRecorder()
         playBT.isEnabled = false
         savePressed.isEnabled = false
-        
-
-        
+     
     }
     
     func setupRecorder() {
@@ -45,8 +40,6 @@ class NewRecordingVC: UIViewController, UITextFieldDelegate {
             let pathComponentes = [basePath, "audio.m4a"]
             audioURL = NSURL.fileURL(withPathComponents: pathComponentes)!
         
-            
-            
             var settings: [String:AnyObject] = [:]
             settings[AVFormatIDKey] = Int(kAudioFormatMPEG4AAC) as AnyObject!
             settings[AVSampleRateKey] = 44100.0 as AnyObject!
