@@ -23,14 +23,30 @@ class SoundfuryUITests: XCTestCase {
         // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
     }
     
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
+
     
     func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        
+        
+        let app = XCUIApplication()
+        let tablesQuery = app.tables
+        tablesQuery.staticTexts["fsf"].tap()
+        
+        tablesQuery.cells.containing(.staticText, identifier:"Swswsw").staticTexts["October 26, 2016"].tap()
+        app.buttons["New"].tap()
+        app.buttons["startrecording"].tap()
+        app.buttons["stoprecording"].tap()
+        app.buttons["playbt 1"].tap()
+        
+        let nameTextField = app.textFields["Name"]
+        nameTextField.tap()
+        nameTextField.typeText("teste 12")
+        app.typeText("3")
+        tablesQuery.cells.containing(.staticText, identifier:"fsf").staticTexts["October 26, 2016"].tap()
+        tablesQuery.staticTexts["Teste 123"].tap()
+        
+        
     }
     
 }

@@ -15,6 +15,7 @@ class NewRecordingVC: UIViewController, UITextFieldDelegate {
     var audioPlayer: AVAudioPlayer?
     var audioURL: URL?
 
+    @IBOutlet weak var waveIMG: UIImageView!
     @IBOutlet weak var nameLabel: UITextField!
  
     @IBOutlet weak var playBT: UIButton!
@@ -68,6 +69,7 @@ class NewRecordingVC: UIViewController, UITextFieldDelegate {
             recordBT.setImage(btImage, for: .normal)
             playBT.isEnabled = true
             savePressed.isEnabled = true
+            waveIMG.image = UIImage(named: "wave.png")
             
             
             

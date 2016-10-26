@@ -51,14 +51,14 @@
                                     <constraint firstItem="Qtc-zM-9M5" firstAttribute="centerX" secondItem="x4h-kk-PT1" secondAttribute="centerX" id="qgw-Es-3za"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="84" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kjl-ss-sWD">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="84" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kjl-ss-sWD">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SoundCell" rowHeight="84" id="4fR-Kq-HAn" customClass="SoundCell" customModule="Soundfury" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="84"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4fR-Kq-HAn" id="kgG-V0-gJd">
-                                            <frame key="frameInset" width="375" height="84"/>
+                                            <frame key="frameInset" width="375" height="83.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="playbt-1" translatesAutoresizingMaskIntoConstraints="NO" id="u9e-yz-a2v">
@@ -71,16 +71,16 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="pUL-7f-mJs"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
-                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                                    <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dia na Prais com amigos curtindo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="rBa-Uu-VFz">
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="46" id="VBy-fG-aJG"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
-                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="21"/>
+                                                    <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -212,6 +212,11 @@
                                     <action selector="savePressed:" destination="lN2-cY-ijS" eventType="touchUpInside" id="lpj-eQ-tMr"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="onP-wD-Wcv">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="X2b-N6-IIx"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -226,8 +231,11 @@
                             <constraint firstItem="yZb-LK-ga0" firstAttribute="top" secondItem="weT-6o-C7s" secondAttribute="bottom" constant="31" id="J0o-9x-5PS"/>
                             <constraint firstAttribute="trailingMargin" secondItem="yZb-LK-ga0" secondAttribute="trailing" constant="110.5" id="KfF-bM-4tU"/>
                             <constraint firstItem="weT-6o-C7s" firstAttribute="trailing" secondItem="nK5-bn-0Qd" secondAttribute="trailingMargin" id="Lip-3A-Sw5"/>
+                            <constraint firstItem="wzu-96-KKp" firstAttribute="top" secondItem="onP-wD-Wcv" secondAttribute="bottom" constant="20" id="RbO-GB-j6x"/>
                             <constraint firstItem="CUT-s2-xb8" firstAttribute="top" secondItem="IDS-2j-8bj" secondAttribute="bottom" constant="60" id="Zis-Ko-E2l"/>
                             <constraint firstItem="IDS-2j-8bj" firstAttribute="leading" secondItem="nK5-bn-0Qd" secondAttribute="leading" id="eSl-pJ-DOE"/>
+                            <constraint firstItem="onP-wD-Wcv" firstAttribute="trailing" secondItem="nK5-bn-0Qd" secondAttribute="trailingMargin" id="fjr-k8-Pr8"/>
+                            <constraint firstItem="onP-wD-Wcv" firstAttribute="leading" secondItem="nK5-bn-0Qd" secondAttribute="leadingMargin" id="jQV-Nu-NGm"/>
                             <constraint firstItem="IDS-2j-8bj" firstAttribute="top" secondItem="nK5-bn-0Qd" secondAttribute="top" id="th4-zT-8yJ"/>
                         </constraints>
                     </view>
@@ -236,11 +244,12 @@
                         <outlet property="playBT" destination="43F-Af-Piv" id="oUa-Tv-afh"/>
                         <outlet property="recordBT" destination="CUT-s2-xb8" id="G2b-Qj-c9C"/>
                         <outlet property="savePressed" destination="yZb-LK-ga0" id="XKs-Pm-mmP"/>
+                        <outlet property="waveIMG" destination="onP-wD-Wcv" id="gyy-Px-U4H"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mvh-vp-drk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-46.875" y="-48.591549295774648"/>
+            <point key="canvasLocation" x="-47.200000000000003" y="-49.025487256371818"/>
         </scene>
     </scenes>
     <resources>
